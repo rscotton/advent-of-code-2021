@@ -3,7 +3,7 @@ import java.io.File
 val keyTrackerSignalStrengthRange = 0..50
 
 fun main() {
-    val input = File("inputs/Day1Input.txt").readLines().map { it.toInt() }
+    val input = File("inputs/Day1.txt").readLines().map { it.toInt() }
 
     // Challenge 1
     val depthIncreaseCount = (1 until input.size).fold(0) { acc, index ->
