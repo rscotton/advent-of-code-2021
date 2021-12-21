@@ -1,4 +1,3 @@
-import sun.reflect.generics.reflectiveObjects.NotImplementedException
 import java.io.File
 
 enum class Direction {
@@ -9,7 +8,7 @@ fun deserializeDirection(directionStr: String): Direction = when (directionStr) 
     "forward" -> Direction.Forward
     "down" -> Direction.Down
     "up" -> Direction.Up
-    else -> throw NotImplementedException()
+    else -> throw NotImplementedError()
 }
 
 class Submarine(val mode: MoveMode) {
